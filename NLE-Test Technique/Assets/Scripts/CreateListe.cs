@@ -132,6 +132,7 @@ public class CreateListe : MonoBehaviour
         int index=0;
         while(proportion_espece.Count<5*nombre_espece_minoritaire){
             proportion_espece.Add(minimum_especes[index%minimum_especes.Count]);
+            index++;
         }
 
         int randomIndex = Random.Range(0, proportion_espece.Count);
